@@ -17,7 +17,7 @@ I dealt with the original data(that was sourced externally) in the `Data cleanin
 
 The new `cleaned data` has records for the year 2014 May - 2015 May. The data has no missing records or inappropriate datatypes. There are 21597 records of homes in King County, with their attributes, renovation year if any, and their selling price. 
 
-After completing the model, I exported a csv file called 'model features and coefficients' of the fetures and respecive coefficients(which are in dollars) for the agency to use when estimating the value of a house.
+After completing the model, I exported a csv file called `model features and coefficients` of the fetures and respecive coefficients(which are in dollars) for the agency to use when estimating the value of a house.
 
 This information is significant for me to use when modelling and solving the business problem.
 
@@ -80,27 +80,40 @@ home_age, sqft_living and sqft_lot final distribution before transformation was:
 
 After transfomation:
 
+scaled_home_age:
+
 ![scaled_home_age](https://user-images.githubusercontent.com/104377216/177055805-6e053cbb-017d-4472-9ff9-804390807e41.jpg)
+
+transformed_sqft_living:
+
 ![transformed_sqft_living](https://user-images.githubusercontent.com/104377216/177055830-3b09c764-9c44-4dd0-a18f-89a3e793757c.jpg)
+
+transformed_sqft_lot:
+
 ![transformed_sqft_lot](https://user-images.githubusercontent.com/104377216/177055844-097426ff-718d-46f6-b0ea-49084ca36102.jpg)
 
 ### Modelling
 The final model is a multiple polynomial model that has transformed_sqft_living_sq as the only polynomial feature.
 
 The train model results are:
+
 ![Screenshot from 2022-07-04 00-25-13](https://user-images.githubusercontent.com/104377216/177057864-dbf846d9-668e-4dec-8c2e-273a6067d86e.png)
 ![Screenshot from 2022-07-04 00-25-02](https://user-images.githubusercontent.com/104377216/177057868-1a61056c-9ddb-4522-a0ff-b46e16a464ac.png)
 
 The train score value is = 0.657
+
 The test score value is = 0.6430696957773693
 
 #### Does it follow the linear regression assumptions?
 
-Normality check: ![Normality assumption](https://user-images.githubusercontent.com/104377216/177058022-6d6ee7c0-4367-4841-8b80-743ec88a497d.jpg)
+Normality check:
+![Normality assumption](https://user-images.githubusercontent.com/104377216/177058022-6d6ee7c0-4367-4841-8b80-743ec88a497d.jpg)
 
-Homoscedasticity check: ![Homoscedasticity assumption](https://user-images.githubusercontent.com/104377216/177058047-6dadc120-f5fb-42f6-b6f0-0052e779e4b4.jpg)
+Homoscedasticity check:
+![Homoscedasticity assumption](https://user-images.githubusercontent.com/104377216/177058047-6dadc120-f5fb-42f6-b6f0-0052e779e4b4.jpg)
 
-Linearity check: ![Linearity assumption](https://user-images.githubusercontent.com/104377216/177058065-b46d5b12-2211-4251-817b-c43ea699db87.jpg)
+Linearity check:
+![Linearity assumption](https://user-images.githubusercontent.com/104377216/177058065-b46d5b12-2211-4251-817b-c43ea699db87.jpg)
 
 Although there are some outliers here and there, we can say that the model meets all assumptions of linear regression.
 
@@ -110,7 +123,7 @@ Although there are some outliers here and there, we can say that the model meets
 ### Conclusion
 According to our model a house has a base price of 15,880,000 dollars. The base price can be off by +(plus) or -(minus) 217,461.106 dollars. 
 
-After checking the attributes for a house, appropriate changes are made to the price. For example a house having a poor grade reduces the price by ~302,900 dollars while a house having an excellent grade increases the price by ~861,900 dollars.
+After checking the attributes for a house, appropriate changes are made to the price. For example a house having a poor grade reduces the price by ~302,900 dollars while a house having an excellent grade increases the price by ~861,900 dollars. For more information on this check `model features and coefficients.csv` in the data folder.
 
 ### Recommendations
 More investigation into the relation of certain features to price should be done to have a better and more accurate understanding of how said features affect the price of a house. 

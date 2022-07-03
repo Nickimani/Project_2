@@ -14,9 +14,9 @@ By completing this, the business is at a better position to advise clients who w
 
 
 ## Data 
-I dealt with the original data(that was sourced externally) in the `Data cleaning notebook`, `Housing data` in the `data` folder has a couple of missing values which I filled with 0 after some considerations, and inappropriate records such as '?' in `sqft_basement` which I also replaced with 0. This is based on the assumption that such records mean that a house doesn't have that feature. After these minor tweaks I exported a new dataframe called `Cleaned data` which is what I use when making the model.
+I dealt with the original data(that was sourced externally) in the `Data cleaning notebook`, `Housing data` in the `data` folder has a couple of missing values which I filled with 0 after some considerations, and inappropriate records such as '?' in `sqft_basement` which I also replaced with 0. This is based on the assumption that such records mean that a house doesn't have that feature. After these minor tweaks I exported a new dataframe called `Cleaned_housing` which is what I use when making the model.
 
-The new `cleaned data` has records for the year 2014 May - 2015 May. The data has no missing records or inappropriate datatypes. There are 21597 records of homes in King County, with their attributes, renovation year if any, and their selling price. 
+The new `Cleaned_housing.csv` file has records for the year 2014 May - 2015 May. The data has no missing records or inappropriate datatypes. There are 21597 records of homes in King County, with their attributes, renovation year if any, and their selling price. 
 
 After completing the model, I exported a csv file called `model features and coefficients` of the fetures and respecive coefficients(which are in dollars) for the agency to use when estimating the value of a house.
 

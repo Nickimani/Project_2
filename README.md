@@ -1,4 +1,4 @@
-# Unsung real estate agency project
+# Unsung Real Estate Agency Project
 _by Nick P. Kimani_
 
 ## Business problem
@@ -62,4 +62,4 @@ Then I did min_max scaling on home_age and log transformation on sqft_living and
 ## Results
 The price distribution was: ![Price distribution](https://user-images.githubusercontent.com/104377216/177053873-f2ba0491-5226-4c6a-bdd0-852bb96f2e4b.jpg)
 
-sqft_living and sqft_lot final distribution afte transformation was: 
+home_age, sqft_living and sqft_lot final distribution before transformation was: 

@@ -107,12 +107,15 @@ The test score value is = 0.6430696957773693
 #### Does it follow the linear regression assumptions?
 
 Normality check:
+
 ![Normality assumption](https://user-images.githubusercontent.com/104377216/177058022-6d6ee7c0-4367-4841-8b80-743ec88a497d.jpg)
 
 Homoscedasticity check:
+
 ![Homoscedasticity assumption](https://user-images.githubusercontent.com/104377216/177058047-6dadc120-f5fb-42f6-b6f0-0052e779e4b4.jpg)
 
 Linearity check:
+
 ![Linearity assumption](https://user-images.githubusercontent.com/104377216/177058065-b46d5b12-2211-4251-817b-c43ea699db87.jpg)
 
 Although there are some outliers here and there, we can say that the model meets all assumptions of linear regression.

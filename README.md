@@ -1,11 +1,12 @@
 # Unsung Real Estate Agency Project
-_by Nick P. Kimani_
+_by **Nick P. Kimani**_
 
 
 ## Business problem
 Unsung real estate agency is an agency in King County that deals with clients who want to buy/sell homes.
 
 They want to create an algorithm and use it to make a model for pricing of houses:
+
 - The primary purpose of the model is to predict buying/selling prices of houses.
 - The secondary purpose is for inferring features/atrributes that significantly affect the pricing of a house. 
 
@@ -50,7 +51,7 @@ categorical features in our data are:
 ## Methods
 
 ### Exploratory data analysis
-While exploring the data an oulier was found in `bedrooms` and I dropped that record. 
+While exploring the data I found an outlier in `bedrooms` which was a hosue with 33 bedrooms. I decided to drop that record. 
 
 I then replaced `yr_built` with `home_age` to represent the age of a house at the time it was sold. Also I replaced `yr_renovated` with `renovated` that shows whether a house has had any renovations done(1s) or not(0s).
 
